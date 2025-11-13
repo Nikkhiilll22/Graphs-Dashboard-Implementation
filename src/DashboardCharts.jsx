@@ -10,15 +10,15 @@ export default function DashboardCharts() {
   // 🔹 Login API
   const getNewToken = useCallback(async () => {
     try {
-      const res = await fetch("https://hr.techind.co/api/user/signin", {
+      const res = await fetch("", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json, text/plain, */*",
         },
         body: JSON.stringify({
-          email: "sandeep@techind.co",
-          password: "Sandeep@123",
+          email: "s@gmail.com",
+          password: "S",
           keep_me_logged_in: false,
         }),
       });
@@ -43,7 +43,7 @@ export default function DashboardCharts() {
     async (authToken, retry = true) => {
       try {
         const positionId = ""; // Replace with actual position_id if needed
-        const url = `https://hr.techind.co/api/candidate/dashboard/chartcount?startDate=2025-11-05&endDate=2025-11-12&position_id=${positionId}`;
+        const url = ``;
 
         const res = await fetch(url, {
           headers: {
